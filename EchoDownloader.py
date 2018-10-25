@@ -52,7 +52,7 @@ for idx, subject in enumerate(subjectname):
         #make a nice looking date
         datefor = re.split("(?<=-[0-9]{2})T(?=[0-9]{2}:)", datefor)
 
-    #add the url for lecture downloading to a list after checking if the date has already been downloaded
+        #add the url for lecture downloading to a list after checking if the date has already been downloaded
         if datefor[0] not in nodupes_pls:
             try:
                 video = val["data"][i]['lesson']['video']['media']['media']['current']['primaryFiles'][1]['s3Url']
