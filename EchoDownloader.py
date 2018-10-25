@@ -75,7 +75,7 @@ for idx, subject in enumerate(subjectname):
             h['Accept-Language']="en-AU,en;q=0.9"
             h['Host']="content.echo360.org.au"
 			
-			#deals with the cloudflair keypair nuisance
+	    #deals with the cloudflair keypair nuisance
             for cookie in s.cookies:
                 h['Cookie']+=cookie.name+'='+cookie.value+";"
             s.headers.update(h)
